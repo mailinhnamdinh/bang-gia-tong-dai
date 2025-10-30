@@ -1,4 +1,4 @@
-<style>
+
     .activebt {background-color:#f9f9f9;color:green;border:1px green solid;font-weight:bold;box-shadow:2px 2px 2px rgba(0,0,0,0.3);}
     .DongXe_Button {border-radius:8px;padding:0px 5px 0px 5px;}
     .inactivebt {color:rgba(0,0,0,0.6);border:0.5px solid rgba(0,0,0,0.1);}
@@ -91,4 +91,3 @@
     .Oto4Cho {width:60px;}
     .Oto7Cho {width:80px;}
     a{text-decoration:none;color:white;}
-</style>
