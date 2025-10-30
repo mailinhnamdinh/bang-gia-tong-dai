@@ -1,0 +1,94 @@
+<style>
+    .activebt {background-color:#f9f9f9;color:green;border:1px green solid;font-weight:bold;box-shadow:2px 2px 2px rgba(0,0,0,0.3);}
+    .DongXe_Button {border-radius:8px;padding:0px 5px 0px 5px;}
+    .inactivebt {color:rgba(0,0,0,0.6);border:0.5px solid rgba(0,0,0,0.1);}
+    
+    @font-face 
+	{
+        font-family: "MainFont";
+        src: url("style/JosefinSans-VariableFont_wght.ttf");
+    }
+    
+    @media only screen and (max-width: 500px) {.Clock{display:none;}}
+    
+    
+    .DongXe_Button:active 
+    {
+        position:relative;
+    	top:1px;
+    }
+    
+    html
+    {
+        /* background: -webkit-linear-gradient(top left, #25A55E, #9ABE5B); */
+        /* background: -webkit-linear-gradient(bottom left, #006230, #259a15); */
+        background:#259a15;
+    }
+    
+    .Input_Empty
+    {
+        color:green;
+        background:white;
+        border:1px solid green;
+        border:0.1px green solid;
+    }
+    
+    .Input_NotEmpty
+    {
+        color:white;
+        background:green;
+        border:0.1px rgba(255,255,255,0.2) solid;
+    }
+    
+    .PVCInput 
+    {
+        width:90%;
+        padding:5px;
+        margin:5px;
+        font-weight:bold;
+        font-size:18px;
+        border-radius:5px;
+        border:0.5px solid green;
+        color:green;
+    }
+    @media only screen and (max-width: 600px) { .Container {width:100%;}}
+    @media only screen and (min-width: 601px) { .Container {max-width:500px;}}
+    
+    @media only screen and (max-width: 500px) { .TenCongTy {display:none;}}
+    @media only screen and (min-width: 501px) { .TenCongTy_MB {display:none;}}
+    
+    
+    @media only screen and (max-width: 500px) { .Menu_MarginLeft {display:none;}
+        .BangGia_NiemYet_PC {display:none;}
+    }
+    @media only screen and (min-width: 501px) { .BangGia_NiemYet_MB {display:none;}}
+    
+    .Km_ChonSan 
+    {
+        width:90%; 
+        color:rgba(0,0,0,0.8);
+        background: linear-gradient(40deg, #ccffcc 0%, rgba(255,255,255,1) 100%);
+        border-radius:5px;
+        padding:3px;
+        margin:3px;
+        text-align:center;
+        border:0.5px solid green;
+    }
+    .Km_Td {width:20%;text-align:center;}
+    .Km_Td2 {width:25%;text-align:center;}
+    .Km_ChonSan:active 
+    {
+    	position:relative;
+    	top:2px;
+    }
+    
+    .Oto5Cho1 {width:60px;}
+    .Oto4Cho1 {width:45px;}
+    .Oto7Cho1 {width:65px;}
+    
+    
+    .Oto5Cho {width:75px;}
+    .Oto4Cho {width:60px;}
+    .Oto7Cho {width:80px;}
+    a{text-decoration:none;color:white;}
+</style>

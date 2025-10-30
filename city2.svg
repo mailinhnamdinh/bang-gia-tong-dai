@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" x="0" y="0" width="1020" height="120" viewbox = "0 0 1020 120">
+
+	
+	<g id="Oto4c3_2" transform="translate(-200,146) scale(0.6,0.6)">
+	    <ellipse cx="55" cy="55" rx="53" ry="8" fill="rgba(0,0,0,0.2)"/>
+		<path fill="#eb0018" stroke="none" d="M5,25 c1 -5, 5 -5,13 -6 c6 -10, 8 -10, 12  -14 c10 -4,10 -4,35 -3 c8 1,10 3,27 20 c10 0,20 5,22 10 v14 h-19 a10,10 1,0,0 -24,0 h-28 a10,10 1,0,0 -24,0 h-15 v-20"/>
+	
+		<path fill="#2e2e2b" d="M35,22 c0 -5, -5 -13, 18 -15 l2,15"/>
+		<path fill="#2e2e2b" d="M59,22 l-2,-15 c9 0, 17 0, 25 15	"/>
+		
+		<g id="Oto4c3_BanhXe">
+			<circle cx="31" cy="45" r="10.5" fill="#2e2e2b"/>
+			<circle cx="31" cy="45" r="6.5" fill="#a7a79d"/>
+			<circle cx="31" cy="45" r="2" fill="#707068"/>
+		</g>
+		<use xlink:href="#Oto4c3_BanhXe" x="52" y="0" />
+		<path fill="#ffefbd" d="M100,28 s10,-3 10,5 l-8,-2"/>
+		<g>
+			<path id="Tim1" d="M-50,-7 s-30,-30 -25,-40 a12,12 0,0,1 25,0 a12,12 0,0,1 25,0 s6,10 -25,40" fill="white" stroke="green"/>
+			<use xlink:href="#Tim1" x="10" y="-3" transform="scale(0.4,0.4)" />
+			<animateTransform 
+			 attributeType="xml" 
+			 attributeName="transform" 
+			 type="scale"
+			 begin="0s"
+			 dur='2s'
+			 values="-0.8,0.8;-0.6,0.6;-0.8,0.8"
+			 repeatCount="indefinite"
+			 />
+		</g>
+		<use xlink:href="#Tim1" x="380" y="10" transform="scale(0.2,0.2)" />
+		<animateTransform
+		  attributeType="xml" 
+		  attributeName="transform"
+		  type="translate"
+		  begin="2s"
+		  dur="60s"
+		  values="-200,66; 200,66;200,66;1200,66;1210,66;1210,66;1210,66;1210,66;1210,66;1210,66"
+		  repeatCount="indefinite"/>
+	   <animateTransform 
+		 attributeType="xml" 
+		 attributeName="transform" 
+		 type="scale"
+		 begin="2s"
+		 dur='15s'
+		 values="0.75,0.75"
+		 repeatCount="indefinite"
+		  additive="sum"/>
+	</g>
+	
+	
+	
+	<g id="Oto4c1" transform="translate(600,346) scale(0.75,0.75)">
+		<ellipse cx="55" cy="55" rx="53" ry="8" fill="rgba(0,0,0,0.2)"/>
+		<path fill="#6fbf06" stroke="none" d="M5,25 c1 -5, 5 -5,13 -6 c6 -10, 8 -10, 12  -14 c10 -4,10 -4,35 -3 c8 1,10 3,27 20 c10 0,20 5,22 10 v14 h-19 a10,10 1,0,0 -24,0 h-28 a10,10 1,0,0 -24,0 h-15 v-20"/>
+		
+		<path fill="#2e2e2b" d="M35,22 c0 -5, -5 -13, 18 -15 l2,15"/>
+		<path fill="#2e2e2b" d="M59,22 l-2,-15 c9 0, 17 0, 25 15	"/>
+		
+		<g id="Oto4c1_BanhXe">
+			<circle cx="31" cy="45" r="10.5" fill="#2e2e2b"/>
+			<circle cx="31" cy="45" r="6.5" fill="#a7a79d"/>
+			<circle cx="31" cy="45" r="2" fill="#707068"/>
+		</g>
+		<use xlink:href="#Oto4c1_BanhXe" x="52" y="0" />
+		<path fill="#ffefbd" d="M100,28 s10,-3 10,5 l-8,-2"/>
+		
+		<g>
+			<path id="Tim1" d="M-50,-7 s-30,-30 -25,-40 a12,12 0,0,1 25,0 a12,12 0,0,1 25,0 s6,10 -25,40" fill="white" stroke="green"/>
+			<use xlink:href="#Tim1" x="10" y="-3" transform="scale(0.4,0.4)" />
+			<animateTransform 
+			 attributeType="xml" 
+			 attributeName="transform" 
+			 type="scale"
+			 begin="0s"
+			 dur='2s'
+			 values="-0.8,0.8;-0.6,0.6;-0.8,0.8"
+			 repeatCount="indefinite"
+			 />
+		</g>
+		<use xlink:href="#Tim1" x="380" y="10" transform="scale(0.2,0.2)" />
+		<animateTransform
+		  attributeType="xml" 
+		  attributeName="transform"
+		  type="translate"
+		  dur="60s"
+		  values="-200,66; 400,66;400,66;1200,66;1210,66;1210,66;1210,66;1210,66;1210,66;1210,66"
+		  repeatCount="indefinite"/>
+	   <animateTransform 
+		 attributeType="xml" 
+		 attributeName="transform" 
+		 type="scale"
+		 dur='15s'
+		 values="0.75,0.75"
+		 repeatCount="indefinite"
+		  additive="sum"/>
+	</g>
+	
+	
+	
+	
+</svg>
