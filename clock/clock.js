@@ -15,8 +15,8 @@ function DongBoThoiGianVoiPC()
     var date = new Date();
     var h = parseInt(date.getHours()); 
     var m = parseInt(date.getMinutes());
-    document.getElementById('Clock_Gio').text = (h < 10 ? '0' : '') + h;
-	document.getElementById('Clock_Phut').text = (m < 10 ? '0' : '') + m;
+    document.getElementById('Clock_Gio').innerText = (h < 10 ? '0' : '') + h;
+	document.getElementById('Clock_Phut').innerText = (m < 10 ? '0' : '') + m;
 }
 
 DongBo_TimeOut = setInterval(function(){DongBoThoiGianVoiPC();},TocDoDieuChinh*1000);
