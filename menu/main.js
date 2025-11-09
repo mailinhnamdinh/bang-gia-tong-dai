@@ -70,7 +70,6 @@ class SubMenuButton extends MenuButton
         let html = "";
         html += '<tr>';
             html += '<td class="SubMenuButton" style="padding:5px;" ';
-                var html = "";
                 if (this.click_action == 'a')
                 {
                     html += '<a href="' + $this.url + '" target="' + this.target + '">';
