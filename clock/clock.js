@@ -7,43 +7,16 @@ setInterval(function(){TickFlash();},1000);
 
 
 
-let ThoiGianDieuChinh = 90;
 var TocDoDieuChinh = 2;
-var SoLanDieuChinh = 0;
 var DongBo_TimeOut;
 
 function DongBoThoiGianVoiPC()
 {
-    let SaiSo =2;
-    let SaiSoAm = -2;
     var date = new Date();
     var h = parseInt(date.getHours()); 
     var m = parseInt(date.getMinutes());
-    
-    
-    var Gio = parseInt($('#Clock_Gio').text());
-	var Phut = parseInt($('#Clock_Phut').text());
-	
-	if (h == Gio)
-	{
-	    var LechPhut = m - Phut;
-	    if ((LechPhut > 0 && LechPhut <= SaiSo) || (LechPhut < 0 && LechPhut >= SaiSoAm))
-	    {
-	        m = m<10 ? '0' + m : m;
-	        $('#Clock_Phut').text(m);
-	        clearInterval(Clock_UpdateTime_TimeOut);
-	        Clock_UpdateTime_TimeOut = setInterval(function(){Clock_UpdateTime();},30000);
-	        //console.log("lech: " + LechPhut + " hien tai: " + m + " dong ho: " + Phut + " " + Gio);
-	    }
-	}
-	
-	SoLanDieuChinh = SoLanDieuChinh + 2;
-	//console.log('Dang kiem tra lan: ' + SoLanDieuChinh);
-	
-	if (SoLanDieuChinh >= ThoiGianDieuChinh)
-	{
-	    clearInterval(DongBo_TimeOut);
-	}
+    document.getElementById('Clock_Gio').text = (h < 10 ? '0' : '') + h;
+	document.getElementById('Clock_Phut').text = (m < 10 ? '0' : '') + m;
 }
 
 DongBo_TimeOut = setInterval(function(){DongBoThoiGianVoiPC();},TocDoDieuChinh*1000);
