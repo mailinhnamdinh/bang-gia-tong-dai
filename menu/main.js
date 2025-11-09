@@ -37,7 +37,7 @@ class MenuButton
                 html += ' onclick="' + $this.click_action + '" ';
             }
             
-            if (this.subMenu.buttonList.length) > 0)
+            if (this.subMenu.buttonList.length > 0)
             {
                 html += ' onmouseover="$(\'#' + $this.subMenu.id + '\').show()" onmouseout="$(\'#' + $this.subMenu.id + '\').hide()" ';
             }
