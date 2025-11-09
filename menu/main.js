@@ -178,7 +178,7 @@ const menu_Button_List1 =
     ,'a',"_blank",0,new SubMenu("",[],0)),
     new MenuButton("Danh bạ","/danhba/"
     ,'a',"_blank",0,new SubMenu("",[],0)),
-    new MenuButton("QLPT","https://qlpt.pvcgo.net"
+    new MenuButton("QLPT","https://qlpt.great-site.net"
     ,'a',"_blank",0,new SubMenu("",[],0)),
     new MenuButton("Thanh toán",""
     ,'javascript:void(0)',"",0,
