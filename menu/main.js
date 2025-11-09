@@ -170,7 +170,7 @@ const subMenuButton_ListKhac =
 ];
     
     
-const menu_Button_List1 = array
+const menu_Button_List1 =
 [
     new MenuButton("Home",""
     ,'ShowGiaCuoc()',"_blank",0,new SubMenu("",[],0)),    
