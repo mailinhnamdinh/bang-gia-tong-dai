@@ -178,16 +178,12 @@ const menu_Button_List1 =
     ,'a',"_blank",0,new SubMenu("",[],0)),
     new MenuButton("Danh bạ","/danhba/"
     ,'a',"_blank",0,new SubMenu("",[],0)),
-    new MenuButton("KH gọi xe","/index.php"
-    ,'a',"_blank",0,new SubMenu("",[],0)),
     new MenuButton("QLPT","https://qlpt.pvcgo.net"
     ,'a',"_blank",0,new SubMenu("",[],0)),
     new MenuButton("Thanh toán",""
     ,'javascript:void(0)',"",0,
         new SubMenu('SubMenu_ThanhToan',subMenuButton_ListThanhToan,220)),
     new MenuButton("CSKH","/cskh/"
-    ,'a',"_blank",0,new SubMenu("",[],0)),
-    new MenuButton("Viết tắt","/mlo/map/vietTat/"
     ,'a',"_blank",0,new SubMenu("",[],0)),
     new MenuButton("Theo dõi ATGT",""
     ,'javascript:void(0)',"",0,

@@ -232,6 +232,8 @@
     $Menu_Button_List1 = array(
         new Menu_Button("Home",""
         ,'ShowGiaCuoc()',"_blank",0,new SubMenu("",[],0)),
+
+        
         new Menu_Button("MLO",""
         ,'javascript:void(0)',"",0,
             new SubMenu('SubMenu_MLO',$SubMenu_Button_ListMLO,220)),
@@ -264,35 +266,3 @@
 ?>
 
     <?php $Menu1->Show(); ?>
-<script>
-    var ShowGia = 0;
-    function ShowGiaCuoc()
-    {
-        $('.NoiDung_Div').hide();
-        $('#BangGia_Div').show();
-        ShowGia = 0;
-    }
-    
-    function ToggleGiaCuoc()
-    {
-        if (ShowGia == 0)
-        {
-            $('.NoiDung_Div').hide();
-            $('#GiaTour_Div').show();
-            ShowGia = 1;
-        }
-        else
-        {
-            $('.NoiDung_Div').hide();
-            $('#BangGia_Div').show();
-            ShowGia = 0;
-        }
-    }
-    
-    function ShowTocDo()
-    {
-        $('.NoiDung_Div').hide();
-        $('#QuyDinhTocDo_Div').show();
-    }
-    
-</script>
