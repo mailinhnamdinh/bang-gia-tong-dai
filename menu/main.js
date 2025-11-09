@@ -79,11 +79,8 @@ class SubMenuButton extends MenuButton
                     html += '<a href="javascript:void(0);">';
                 }
 
-                html += '<font color="green">' + this.caption + '</font>';
-                if (this.click_action == 'a')
-                {
-                    html += '</a>';
-                }
+                    html += '<font color="green">' + this.caption + '</font>';
+                html += '</a>';                
             html += '</td>';            
         html += '</tr>';
         return html;
