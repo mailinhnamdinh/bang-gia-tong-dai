@@ -127,7 +127,7 @@ class Menu
         this.buttonList = buttonList;
     }
     
-    public function render()
+    render()
     {
         for (let i=0; i<this.buttonList.length; i++)
         {
