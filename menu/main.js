@@ -200,7 +200,7 @@ const menu_Button_List1 =
         new SubMenu('SubMenu_Khac',subMenuButton_ListKhac,200)),
 ];   
 let menu1 = new Menu(menu_Button_List1);
-menu1->render();
+menu1.render();
 
 
 
