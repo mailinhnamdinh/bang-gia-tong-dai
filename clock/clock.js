@@ -1,42 +1,9 @@
-function Clock_UpdateTime()
-{
-  var field_name = '';
-  var edit_id = '';
-  var value = '';
-
-  $.ajax({
-	 url: '/giacuoc/clock/gettime.php',
-	 type: 'post',
-	 data: { field:field_name, value:value, id:edit_id },
-	 success:function(response){
-	     var Tach = response.split(':');
-	     $('#Clock_Gio').text(Tach[0]);
-	     $('#Clock_Phut').text(Tach[1]);
-	     $('#Clock_Network_Error').hide();
-	 },
-      error: function () {
-        $('#Clock_Network_Error').show();
-      }
-	 
-   });
-   
-   
-}
-Clock_UpdateTime();
-var Clock_UpdateTime_TimeOut;
-Clock_UpdateTime_TimeOut = setInterval(function(){Clock_UpdateTime();},30000);
-
-
-
-
-
 function TickFlash()
 {
     $('#Clock_Tick').text(':');
     setTimeout(function(){$('#Clock_Tick').text('');},500);
 }
 setInterval(function(){TickFlash();},1000);
-
 
 
 
