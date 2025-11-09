@@ -16,7 +16,7 @@ class MenuButton
         var html = "";
         if (this.click_action == 'a')
         {
-            html += '<a href="' + $this.url + '" target="' + this.target + '">';
+            html += '<a href="' + this.url + '" target="' + this.target + '">';
         }
         else
         {
@@ -34,20 +34,20 @@ class MenuButton
             }
             else
             {
-                html += ' onclick="' + $this.click_action + '" ';
+                html += ' onclick="' + this.click_action + '" ';
             }
             
             if (this.subMenu.buttonList.length > 0)
             {
-                html += ' onmouseover="$(\'#' + $this.subMenu.id + '\').show()" onmouseout="$(\'#' + $this.subMenu.id + '\').hide()" ';
+                html += ' onmouseover="$(\'#' + this.subMenu.id + '\').show()" onmouseout="$(\'#' + this.subMenu.id + '\').hide()" ';
             }
             html += '>';
                 html += '<table style="width:100%;height:100%;">';
                     html += '<tr>';
                         html += '<td>';
-                            html += '<font color="white">' + $this.caption + '</font>';
+                            html += '<font color="white">' + this.caption + '</font>';
                         html += '</td>';
-                        if ($this.subMenu.buttonList.length > 0 )
+                        if (this.subMenu.buttonList.length > 0 )
                         {
                             html += '<td style="width:20px;">';
                                     html += '<img src="img/down.png" style="width:10px;">';
@@ -72,15 +72,15 @@ class SubMenuButton extends MenuButton
             html += '<td class="SubMenuButton" style="padding:5px;" ';
                 if (this.click_action == 'a')
                 {
-                    html += '<a href="' + $this.url + '" target="' + this.target + '">';
+                    html += '<a href="' + this.url + '" target="' + this.target + '">';
                 }
                 else
                 {
                     html += '<a href="javascript:void(0);">';
                 }
 
-                html += '<font color="green">' + $this.caption + '</font>';
-                if ($this->Click_Action == 'a')
+                html += '<font color="green">' + this.caption + '</font>';
+                if (this.click_action == 'a')
                 {
                     html += '</a>';
                 }
@@ -104,15 +104,15 @@ class SubMenu
     {
         var html = "";
         html += '<span class="SubMenu" style="';
-        if ($this->Width > 0)
+        if (this.width > 0)
         {
-            html += 'width:' + $this.width + 'px;';
+            html += 'width:' + this.width + 'px;';
         }
         html += 'display:none;" id="' + this.id + '">';
             html += '<table style="text-align:left;width:100%;">';
                 for (let i=0;i<this.buttonList.length;i++)
                 {
-                    html += this.buttonList[$i].render();
+                    html += this.buttonList[i].render();
                 }
             html += '</table>';
         html += '</span>';
@@ -129,7 +129,7 @@ class Menu
     
     public function render()
     {
-        for (let i=0; i<$this.buttonList.length; i++)
+        for (let i=0; i<this.buttonList.length; i++)
         {
             this.buttonList[i].render();
         }
