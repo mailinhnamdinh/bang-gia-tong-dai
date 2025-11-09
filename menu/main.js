@@ -16,7 +16,7 @@ class MenuButton
         var html = "";
         if (this.click_action == 'a')
         {
-            html += '<a href="' + $this.url + '" target="' + this->target + '">';
+            html += '<a href="' + $this.url + '" target="' + this.target + '">';
         }
         else
         {
@@ -24,12 +24,12 @@ class MenuButton
         }
 
             html += '<div class="Menu_Button" ';
-            if ($this->Width > 0)
+            if (this.width > 0)
             {
-                html += 'style="width:' + $this->Width + 'px;" ';
+                html += 'style="width:' + this.width + 'px;" ';
             }
             
-            if ($this->Click_Action == 'a')
+            if (this.click_action == 'a')
             {
             }
             else
@@ -73,14 +73,14 @@ class SubMenuButton extends MenuButton
                 var html = "";
                 if (this.click_action == 'a')
                 {
-                    html += '<a href="' + $this.url + '" target="' + this->target + '">';
+                    html += '<a href="' + $this.url + '" target="' + this.target + '">';
                 }
                 else
                 {
                     html += '<a href="javascript:void(0);">';
                 }
 
-                html += '<font color="green">'.$this->Caption.'</font>';
+                html += '<font color="green">' + $this.caption + '</font>';
                 if ($this->Click_Action == 'a')
                 {
                     html += '</a>';
